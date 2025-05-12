@@ -86,14 +86,38 @@
   }
 
     /* portfolio container styles */
-    .portfolioContainer{
-      /* background-color: yellow; */
-    }
-    .portfolioTittle{
+    .aboutMeContainer{
       display: flex;
-      justify-self: center;
-      padding: 2rem;
+      width: 1024px;
+      gap: 3rem;
+      background-color: yellow;
+      
     }
+    .aboutmeImageContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 512px;
+      height: 512px;
+      background-color: coral;
+    }
+    .nlvLogo{
+      height: 300px;
+      filter: invert(100%)
+    }
+    .aboutMeSummaryContainer{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 512px;
+      height: 512px;
+      background-color:darkgreen
+    }
+
+    
+
+
+   
 
 
  
