@@ -1,49 +1,140 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - NexxLevelVisuals</title>
-    <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/NexxLevelVisuals.styles.css" asp-append-version="true" />
+﻿<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>@ViewData["Title"] - NexxLevelVisuals</title>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            alabaster: '#FBFBF9',
+            bone: '#F4F2EE',
+            sand: '#ECE8E1',
+            charcoal: '#1A1A1A',
+            graphite: '#2C2B2A',
+            ash: '#74726E'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Didot', '"Bodoni MT"', 'serif'],
+            sans: ['"Cinzel"', 'sans-serif'],
+            body: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif']
+          },
+          letterSpacing: {
+            widest: '.22em',
+            extreme: '.35em'
+          }
+        }
+      }
+    }
+  </script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<!-- Core Typography Styling -->
+<style data-purpose="typography">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FAFAF7;
+      color: #1A1A1A;
+      overflow-x: hidden;
+    }
+    .font-editorial {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .watermark-text {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      user-select: none;
+    }
+  </style>
+<!-- Visual Effects & Contour Lines Styling -->
+<style data-purpose="visual-effects">
+    .contour-line {
+      stroke: rgba(180, 175, 165, 0.35);
+      stroke-width: 1;
+      fill: none;
+      stroke-dasharray: 4 2;
+    }
+    .img-editorial {
+      filter: grayscale(100%) contrast(108%);
+      transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .img-editorial:hover {
+      filter: grayscale(25%) contrast(105%);
+      transform: scale(1.025);
+    }
+    .grain-overlay {
+      background-image: radial-gradient(#111 0.45px, transparent 0.45px);
+      background-size: 14px 14px;
+      opacity: 0.035;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">NexxLevelVisuals</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+<body class="relative min-h-screen selection:bg-black selection:text-white">
+<!-- Ambient Organic Contour Vectors Layer -->
+<div aria-hidden="true" class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+<svg class="absolute w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<path class="contour-line" d="M-100,200 C300,100 450,450 850,300 C1200,180 1400,500 1700,320"></path>
+<path class="contour-line" d="M100,800 C400,650 650,1100 1100,950 C1500,800 1600,1300 2000,1100"></path>
+<path class="contour-line" d="M-50,1600 C350,1400 550,1900 1050,1750 C1450,1600 1650,2100 2100,1900"></path>
+</svg>
+<div class="absolute inset-0 grain-overlay"></div>
+</div>
+<!-- Ambient Editorial Watermark Columns (as in screenshot) -->
+<aside aria-hidden="true" class="hidden xl:block fixed left-4 top-1/4 -translate-y-1/2 select-none pointer-events-none z-0">
+<span class="watermark-text text-[13px] uppercase tracking-[0.45em] text-neutral-300/60 font-light">
+      PURITY · SIMPLICITY · BREVITY · STYLE · BEAUTY · AESTHETIC
+    </span>
+</aside>
+<aside aria-hidden="true" class="hidden xl:block fixed right-4 top-2/3 -translate-y-1/2 select-none pointer-events-none z-0">
+<span class="watermark-text text-[13px] uppercase tracking-[0.45em] text-neutral-300/60 font-light">
+      LIGHT · RESTRAINT · CONVENIENCE · COMFORT · MINIMALISM
+    </span>
+</aside>
+<!-- BEGIN: TopIndexBar -->
+<header class="relative z-20 border-b border-stone-200/80 bg-[#FAFAF7]/90 backdrop-blur-md px-6 lg:px-16 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between text-xs tracking-widest uppercase text-stone-500 font-medium">
+<div class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-stone-900"></span>
+<span class="font-semibold text-stone-900">MAIN PAGE</span>
+</div>
+<div class="font-editorial italic text-base lowercase tracking-normal text-stone-600">
+        art direction &amp; photography atelier
+      </div>
+<div class="font-mono text-stone-800">
+        /01
+      </div>
+</div>
+</header>
     <div class="container">
-        <main role="main" class="pb-3">
+        <main class="relative z-10">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - NexxLevelVisuals - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="border-t border-stone-300 bg-[#F5F4F0] px-6 lg:px-16 py-12 text-stone-600">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-xs font-light">
+<div class="flex items-center space-x-3">
+<span class="font-editorial text-2xl tracking-tight text-stone-900">XL PHOTO</span>
+<span class="text-stone-400">•</span>
+<span class="tracking-widest uppercase text-[10px] text-stone-500">© 2026 Liza Karov Atelier. All rights reserved.</span>
+</div>
+<div class="flex items-center space-x-8 uppercase tracking-widest text-[10px]">
+<a class="hover:text-black transition" href="#about">About</a>
+<a class="hover:text-black transition" href="#portfolio">Portfolio</a>
+<a class="hover:text-black transition" href="#services">Pricing</a>
+<a class="hover:text-black transition" href="#contact">Privacy Policy</a>
+</div>
+<div class="font-mono text-stone-400 text-[10px]">
+        EDITION 2026 — NO. 01 / UK
+      </div>
+</div>
+</footer>
+
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

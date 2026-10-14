@@ -2,7 +2,438 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- BEGIN: HeroSection -->
+<div>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-6 pb-20" data-purpose="hero-masthead">
+<!-- Hero Framing Container -->
+<div class="relative bg-stone-900 text-white rounded-none shadow-2xl overflow-hidden min-h-[640px] lg:min-h-[780px]">
+<!-- Dual Split Visual Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 h-full absolute inset-0">
+<!-- Left Hero Image & Soft Vignette -->
+<div class="relative h-full overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
+<img alt="Artistic Black and White Female Portrait" class="w-full h-full object-cover object-top opacity-85 transition duration-1000 scale-105 hover:scale-100" src="https://lh3.googleusercontent.com/aida/AEtjO1VnT3bXgddlKmoZpyumf8XIpyFb0n4J9nQt3GUjhIoHU-1LffBKkU2_XY7F9XqrRZ7fmQp9nN20mpANz7IKzlLqc1G3G3K3vvDcMfEhbGgAHPR9PKOfpDmbzo1lRoqeTYJg5cj8DhVLdaWOsX2mr_WHc8E4R6yq_d7WAkncOP0f_qeGfNw5j4HPO7BYaFYAd_StCPOvjhDroHO8EY5uKM7IVJv6g3RoDcbWiNngtsCQSGxkR0zIq5UWBw">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/60"></div>
 </div>
+<!-- Right Hero Image -->
+<div class="relative h-full overflow-hidden">
+<img alt="Editorial Cinematic Portrait Model" class="w-full h-full object-cover object-center opacity-85 transition duration-1000 scale-105 hover:scale-100" src="https://lh3.googleusercontent.com/aida/AEtjO1VSsBbZcnSskNhG30tvQMjH5IYkBKBs1LvSz3Pny_vaX4IrDFpv7lOKFB5Y2Jp7l4lhRf78o6sA21uGEE4Ule8HBr5m4hQ_JeS-LHOMX0Lr7uRu5YHhBks56rJxXkJKjqteYzRMluiZGk5RvhaSC7p-Z4y3FMIBW6NckXaaTCGV7gcKC926ZnVCwfmVv_jDIC-kAB3knlBaMCREBONYcxqllESIlJQC_Xbk5jd9BSVyxUk6x_Nn_6FDtw">
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/60"></div>
+</div>
+</div>
+<!-- Floating Magazine Top Navigation Bar -->
+<div class="relative z-20 flex items-center justify-between px-6 lg:px-12 py-7 border-b border-white/10">
+<!-- Monogram Logo -->
+<a class="flex items-center gap-2 group" href="#">
+<span class="font-editorial text-2xl lg:text-3xl font-light tracking-tight text-white group-hover:opacity-80 transition">NLV &amp; TW MEDIA</span>
+</a>
+<!-- Center Navigation Links -->
+<nav class="hidden md:flex items-center space-x-8 text-[11px] uppercase tracking-widest text-stone-300 font-light">
+<a class="hover:text-white transition pb-0.5 border-b border-transparent hover:border-white" href="#about">About Me</a>
+<a class="hover:text-white transition pb-0.5 border-b border-transparent hover:border-white" href="#portfolio">Portfolio</a>
+<a class="hover:text-white transition pb-0.5 border-b border-transparent hover:border-white" href="#services">Services</a>
+<a class="hover:text-white transition pb-0.5 border-b border-transparent hover:border-white" href="#pricing">Pricing</a>
+<a class="hover:text-white transition pb-0.5 border-b border-transparent hover:border-white" href="#contact">Contacts</a>
+</nav>
+<!-- Action CTA Button -->
+<a class="inline-flex items-center gap-2 text-[11px] uppercase tracking-widest px-5 py-2.5 rounded-full border border-white/30 hover:border-white bg-white/5 hover:bg-white text-white hover:text-black transition duration-300" href="#contact">
+<span class="">Get in touch</span>
+<span class="text-sm font-light">→</span>
+</a>
+</div>
+<!-- Social Bar Left Overlay (as depicted in screenshot) -->
+<div class="hidden lg:flex absolute left-8 top-1/2 -translate-y-1/2 z-20 flex-col items-center space-y-6 text-stone-400">
+<a aria-label="Instagram" class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-xs hover:border-white hover:text-white transition" href="#">
+<span class="">IG</span>
+</a>
+<a aria-label="Behance" class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-xs hover:border-white hover:text-white transition" href="#">
+<span class="">BE</span>
+</a>
+<div class="w-px h-16 bg-white/20"></div>
+<a class="rotate-[-90deg] origin-center text-[10px] tracking-widest uppercase text-stone-400 hover:text-white whitespace-nowrap mt-4" href="#portfolio">
+            portfolio
+          </a>
+</div>
+<!-- Center Typography Overlap: "PHOTO ABOUT YOU" -->
+<div class="relative z-20 flex flex-col justify-center items-center h-[460px] lg:h-[580px] text-center px-4">
+<div class="inline-block mb-3 text-stone-300 text-[11px] uppercase tracking-extreme font-light">
+            Portrait Photographer • Liza Karov
+          </div>
+<h1 class="font-editorial text-5xl sm:text-7xl lg:text-8xl text-white font-normal tracking-normal leading-[0.9] max-w-4xl drop-shadow-sm">
+            PHOTO <br>
+<span class="italic font-light">ABOUT YOU</span>
+</h1>
+<p class="mt-6 font-light text-stone-300 text-xs sm:text-sm tracking-widest uppercase">
+            Timeless Photography — London / Worldwide
+          </p>
+<div class="mt-10 flex items-center gap-4">
+<a class="px-7 py-3 rounded-full bg-white text-stone-900 text-xs uppercase tracking-widest font-medium hover:bg-stone-200 transition" href="#about">
+              Explore Story
+            </a>
+<a class="px-7 py-3 rounded-full border border-white/30 text-white text-xs uppercase tracking-widest font-light hover:bg-white/10 transition" href="#portfolio">
+              View Works
+            </a>
+</div>
+</div>
+<!-- Bottom Status & Pagination Marker -->
+<div class="relative z-20 border-t border-white/10 px-8 py-4 flex items-center justify-between text-[11px] uppercase tracking-widest text-stone-400">
+<div class="flex items-center gap-3">
+<span class="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
+<span class="">Available for autumn bookings</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="w-6 h-px bg-white"></span>
+<span class="text-white font-mono">01</span>
+<span class="text-white/40">/</span>
+<span class="text-white/40 font-mono">04</span>
+</div>
+<div class="hidden sm:block text-stone-400">
+            London, UK
+          </div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: AboutSection -->
+<section class="max-w-7xl mx-auto px-6 lg:px-16 py-16 lg:py-28" data-purpose="editorial-bio" id="about">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-stone-300 pb-8">
+<div>
+<span class="text-[11px] uppercase tracking-extreme text-stone-500 block mb-2">Manifesto &amp; Philosophy</span>
+<h2 class="font-editorial text-5xl md:text-7xl font-light text-stone-900 tracking-tight">
+            ABOUT US</h2>
+</div>
+<p class="mt-4 md:mt-0 font-editorial italic text-xl md:text-2xl text-stone-600 max-w-sm">
+          "The most honest and frank art form is observing a soul in natural light."
+        </p>
+</div>
+<!-- Asymmetrical Editorial Collage Grid (Mirrors screenshot layout) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Editorial Column: Personal statement & Portrait block -->
+<div class="lg:col-span-4 space-y-10">
+<!-- Text Box 1 -->
+<div class="text-xs sm:text-sm text-stone-700 leading-relaxed font-light space-y-4 pr-4">
+<p class="">
+<strong class="font-medium text-stone-900">Hello, this is Liza Karov's page.</strong>
+</p>
+<p class="">
+              As long as I can remember, photography has always been in my life. I tried a lot of different genres of photography and understood that <span class="underline decoration-stone-400 underline-offset-4 font-normal text-stone-900">portrait genre was my passion</span> because it is the most honest and frank one.
+            </p>
+</div>
+<!-- Featured Quote Block -->
+<div class="border-l-2 border-stone-900 pl-5 py-2">
+<h3 class="font-editorial text-2xl lg:text-3xl text-stone-900 leading-snug font-normal">
+              My goal is to capture you, <span class="italic underline decoration-stone-300 underline-offset-4">your character</span>, your story, your special essence.
+            </h3>
+</div>
+<!-- Vertical Complementary Crop Photo (Authentic smile/feature) -->
+<div class="overflow-hidden bg-stone-200 border border-stone-200">
+<img alt="Candid authentic close-up smile and natural laughter" class="w-full h-80 object-cover img-editorial" src="https://lh3.googleusercontent.com/aida/AEtjO1UwwvQ8KdBnP0yCauy4Kw8-skajrTOqUGTFuZkymPCl_Y4dJ71qBsBHiDVLhCITCvmhxum2IGUniD_zoE31O7hVjhilxUuIk8Y4BPXezWdtTtWxiFXTiCz-pdjHnmEEotqiz___qgX29vR_TrV4dv1FLf7xFdlOwAZzy_lD5QYyK3sa7XSkNN_6YoywzEwAFfFXrwVR7XQfy6HWwKI9jf6BCrQGMwU41-a2yP287xWh3gE0iSpAyI1aTg">
+</div>
+<!-- Text Box 2: Working style -->
+<div class="text-xs sm:text-sm text-stone-600 leading-relaxed font-light space-y-3 pt-2">
+<p class="">
+              My photographs are candid but elegant and sophisticated. I want to take really stylish, natural and timeless photos of you.
+            </p>
+<p class="pt-2 text-stone-900 font-editorial italic text-base">
+              Looking forward to working with you.<br>
+<span class="not-italic text-xs font-sans tracking-wider uppercase text-stone-500">Yours, Liza</span>
+</p>
+</div>
+</div>
+<!-- Center & Right: Multitiered Close-up Artistic Crop Collage -->
+<div class="lg:col-span-8 grid grid-cols-2 gap-4 lg:gap-6">
+<!-- Image 1: High angle jawline / profile feature -->
+<div class="col-span-1 overflow-hidden bg-stone-100 border border-stone-200 aspect-[4/5]">
+<img alt="Editorial portrait close up of profile and serenity" class="w-full h-full object-cover img-editorial" src="https://lh3.googleusercontent.com/aida/AEtjO1VpXwkUjbM9SWDujg08a1nPSGmByew7hEZW5RfXHm6L0_e9o9LVjUljri190MwQDB_lp3AEbFJygtw9yRceAQqKLwaJQm70yePn3xnfCv_tRj773QuYfZVeoKb8skFwhNbDk1vh-JUqInrddqJmnxmpNXR_PA5_xvsNKhiE9u6Z4yo1AU37y4_6MsOQvpB2UbnBemAR223-ST3-4P6jQNSHAalasUpl_wJnDx1Qy7uEzfty_5fHq8JJXQ">
+</div>
+<!-- Image 2: Intimate closed-eyes mood -->
+<div class="col-span-1 overflow-hidden bg-stone-100 border border-stone-200 aspect-[4/5]">
+<img alt="Sensual candid portrait with soft natural sunlight" class="w-full h-full object-cover object-center img-editorial" src="https://lh3.googleusercontent.com/aida/AEtjO1VnT3bXgddlKmoZpyumf8XIpyFb0n4J9nQt3GUjhIoHU-1LffBKkU2_XY7F9XqrRZ7fmQp9nN20mpANz7IKzlLqc1G3G3K3vvDcMfEhbGgAHPR9PKOfpDmbzo1lRoqeTYJg5cj8DhVLdaWOsX2mr_WHc8E4R6yq_d7WAkncOP0f_qeGfNw5j4HPO7BYaFYAd_StCPOvjhDroHO8EY5uKM7IVJv6g3RoDcbWiNngtsCQSGxkR0zIq5UWBw">
+</div>
+<!-- Image 3: Hands & Gestures (Sensual intimacy detail) -->
+<div class="col-span-1 overflow-hidden bg-stone-100 border border-stone-200 aspect-square">
+<img alt="Chiaroscuro hands portrait detail and texture" class="w-full h-full object-cover object-bottom img-editorial" src="https://lh3.googleusercontent.com/aida/AEtjO1VSsBbZcnSskNhG30tvQMjH5IYkBKBs1LvSz3Pny_vaX4IrDFpv7lOKFB5Y2Jp7l4lhRf78o6sA21uGEE4Ule8HBr5m4hQ_JeS-LHOMX0Lr7uRu5YHhBks56rJxXkJKjqteYzRMluiZGk5RvhaSC7p-Z4y3FMIBW6NckXaaTCGV7gcKC926ZnVCwfmVv_jDIC-kAB3knlBaMCREBONYcxqllESIlJQC_Xbk5jd9BSVyxUk6x_Nn_6FDtw">
+</div>
+<!-- Image 4: Minimal ear / neck silhouette -->
+<div class="col-span-1 overflow-hidden bg-stone-100 border border-stone-200 aspect-square">
+<img alt="Minimalist fashion editorial pose detail" class="w-full h-full object-cover object-top img-editorial" src="https://lh3.googleusercontent.com/aida/AEtjO1VbsEvAGqJGqPLOJLL_OC7bjdMVpYmogIgoj_YFMo0MJiwDKKO2-NklJfj1B7Wz76_mWzHeC8jpqKkL2_Hwnj3uqofljhCeLGw99zMIcOvLF4e9GfedOQBIm9YffKA6KM8FtfY8ALRv_0g7Ivc-BWGolShUB-xVnjmANysrMg6ukpsXw_h3-cLI-yrfmxMqSygrt-necOLvkaUj7ws0mZQ2mEcx_0K199sLAPxja5IGlKJWUV-H63IegqQ">
+</div>
+<!-- Image 5: Wide serene horizontal candid (Spans across both columns) -->
+<div class="col-span-2 overflow-hidden bg-stone-100 border border-stone-200 h-64 lg:h-80">
+<img alt="Atmospheric studio overview and delicate lighting" class="w-full h-full object-cover object-center img-editorial" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3-t4SE5ewLnYk3C6McOaPE-vQwp_x2tFbpCsBSAWs1CrtBbYMKGeDhBujwME2ioCq8zqbxjxiAbrSOtbfKzAERWFulmwwCdA5fz09bAnGouqk9otS1mZRursOTy49qNrl_iUeX9D-3yA-wfXzNrxCtgdjVGCJYgtFDaoCxcsdfo0ru1Q2HJB76LqlKaxCjZW-GfuHzuyup6ced6giYHDoBWM4bOO76tpMkGqOfUBihGZ8O18J_vlBvSXB4qzNIl40hQ">
+</div>
+</div>
+</div>
+</section>
+<!-- END: AboutSection -->
+<!-- BEGIN: PortfolioShowcase -->
+<section class="max-w-7xl mx-auto px-6 lg:px-16 py-16 lg:py-24 border-t border-stone-300" data-purpose="portfolio-curation" id="portfolio">
+<!-- Portfolio Masthead -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+<div>
+<span class="text-[11px] uppercase tracking-extreme text-stone-500 block mb-2">Curated Galleries</span>
+<h2 class="font-editorial text-5xl md:text-7xl font-light text-stone-900 tracking-tight">
+            PORTFOLIO
+          </h2>
+</div>
+<div class="mt-4 md:mt-0 text-left md:text-right max-w-sm">
+<p class="text-xs text-stone-500 uppercase tracking-widest">
+            The best thing you can do to get ready for a shoot is not to get ready. Allow yourself just to <span class="text-stone-900 underline underline-offset-4">be yourself</span> in front of the camera.
+          </p>
+</div>
+</div>
+<!-- Categories Filter Tabs -->
+<div class="flex flex-wrap items-center gap-3 mb-12 pb-4 border-b border-stone-200 text-xs uppercase tracking-widest font-medium">
+<button class="px-5 py-2 rounded-full bg-stone-900 text-white transition">All Works</button>
+<button class="px-5 py-2 rounded-full hover:bg-stone-200 text-stone-600 transition">Portraits</button>
+<button class="px-5 py-2 rounded-full hover:bg-stone-200 text-stone-600 transition">Brand Shoots</button>
+<button class="px-5 py-2 rounded-full hover:bg-stone-200 text-stone-600 transition">Product Shoots</button>
+<button class="px-5 py-2 rounded-full hover:bg-stone-200 text-stone-600 transition">Fine-Art Pets</button>
+</div>
+<!-- Portfolio Editorial Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Portfolio Item 1: Individual Portrait -->
+<article class="group flex flex-col bg-white border border-stone-200 p-4 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
+<div class="relative overflow-hidden aspect-[3/4] bg-stone-100 mb-5">
+<img alt="Portrait project on the way home" class="w-full h-full object-cover img-editorial" src="https://lh3.googleusercontent.com/aida/AEtjO1UwwvQ8KdBnP0yCauy4Kw8-skajrTOqUGTFuZkymPCl_Y4dJ71qBsBHiDVLhCITCvmhxum2IGUniD_zoE31O7hVjhilxUuIk8Y4BPXezWdtTtWxiFXTiCz-pdjHnmEEotqiz___qgX29vR_TrV4dv1FLf7xFdlOwAZzy_lD5QYyK3sa7XSkNN_6YoywzEwAFfFXrwVR7XQfy6HWwKI9jf6BCrQGMwU41-a2yP287xWh3gE0iSpAyI1aTg">
+<div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-[10px] uppercase font-mono px-2.5 py-1 tracking-widest text-stone-800">
+              Portrait
+            </div>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<span class="text-[10px] tracking-widest uppercase font-mono text-stone-400 block mb-1">05/10/2024 • London</span>
+<h3 class="font-editorial text-2xl text-stone-900 font-normal leading-tight group-hover:text-stone-600 transition">
+                on the way home
+              </h3>
+<p class="mt-2 text-xs text-stone-500 font-light line-clamp-2">
+                A study of fleeting shadows and sunset reflections across Kensington streets.
+              </p>
+</div>
+<div class="mt-5 pt-4 border-t border-stone-100 flex items-center justify-between text-xs tracking-widest uppercase font-medium text-stone-900">
+<span class="">View series</span>
+<span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+</div>
+</div>
+</article>
+<!-- Portfolio Item 2: Brand Editorial -->
+<article class="group flex flex-col bg-white border border-stone-200 p-4 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
+<div class="relative overflow-hidden aspect-[3/4] bg-stone-100 mb-5">
+<img alt="Brand atelier fashion editorial shoot" class="w-full h-full object-cover img-editorial" src="https://lh3.googleusercontent.com/aida/AEtjO1VbsEvAGqJGqPLOJLL_OC7bjdMVpYmogIgoj_YFMo0MJiwDKKO2-NklJfj1B7Wz76_mWzHeC8jpqKkL2_Hwnj3uqofljhCeLGw99zMIcOvLF4e9GfedOQBIm9YffKA6KM8FtfY8ALRv_0g7Ivc-BWGolShUB-xVnjmANysrMg6ukpsXw_h3-cLI-yrfmxMqSygrt-necOLvkaUj7ws0mZQ2mEcx_0K199sLAPxja5IGlKJWUV-H63IegqQ">
+<div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-[10px] uppercase font-mono px-2.5 py-1 tracking-widest text-stone-800">
+              Brand
+            </div>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<span class="text-[10px] tracking-widest uppercase font-mono text-stone-400 block mb-1">20/10/2024 • Paris</span>
+<h3 class="font-editorial text-2xl text-stone-900 font-normal leading-tight group-hover:text-stone-600 transition">
+                i am your mirror
+              </h3>
+<p class="mt-2 text-xs text-stone-500 font-light line-clamp-2">
+                Haute couture campaign exploring linen drapery and reflective architectural panels.
+              </p>
+</div>
+<div class="mt-5 pt-4 border-t border-stone-100 flex items-center justify-between text-xs tracking-widest uppercase font-medium text-stone-900">
+<span class="">View series</span>
+<span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+</div>
+</div>
+</article>
+<!-- Portfolio Item 3: Luxury Product Shoot -->
+<article class="group flex flex-col bg-white border border-stone-200 p-4 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
+<div class="relative overflow-hidden aspect-[3/4] bg-stone-100 mb-5">
+<img alt="Luxury timepiece on natural stone with chiaroscuro lighting" class="w-full h-full object-cover img-editorial" src="https://lh3.googleusercontent.com/aida/AEtjO1VytEIpr9rCSZ-jPsf5wabhb7CSVctWEGUZR7M3TEPH-dD5m33ZFYF9tjfE9c0kQeqFyXaQbQmm1Joq502VjNgW9c9I3NnlKSf9UPdSgkqbzq-p5vCZTJytgUr7P21R0xzffbvAEiWzgxVgXDwB9YwBnapDLiixdOY2H8bborBXs7YXSCfSBcRaQIwf8SslnRR4a3UOS61ZXYGVN8yrJimAC4POyNSPG5WnfL53ndQkaE90-x0NCjxHAUA">
+<div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-[10px] uppercase font-mono px-2.5 py-1 tracking-widest text-stone-800">
+              Product
+            </div>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<span class="text-[10px] tracking-widest uppercase font-mono text-stone-400 block mb-1">14/11/2024 • Studio</span>
+<h3 class="font-editorial text-2xl text-stone-900 font-normal leading-tight group-hover:text-stone-600 transition">
+                stone &amp; timepieces
+              </h3>
+<p class="mt-2 text-xs text-stone-500 font-light line-clamp-2">
+                High-contrast horology still life utilizing volcanic basalt rock and raking dawn light.
+              </p>
+</div>
+<div class="mt-5 pt-4 border-t border-stone-100 flex items-center justify-between text-xs tracking-widest uppercase font-medium text-stone-900">
+<span class="">View series</span>
+<span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+</div>
+</div>
+</article>
+<!-- Portfolio Item 4: Pet Fine-Art Shoot -->
+<article class="group flex flex-col bg-white border border-stone-200 p-4 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
+<div class="relative overflow-hidden aspect-[3/4] bg-stone-100 mb-5">
+<img alt="Fine-art companion dog portrait in sun-drenched minimalist interior" class="w-full h-full object-cover img-editorial" src="https://lh3.googleusercontent.com/aida/AEtjO1WuTntlLxcyEo2ubX1_TFHG_jcX9zWtVzQBQO_iBDhv8iGSp5eZoGd_gRMPW_5mh1u1Dkco5N4kngvaCCFLi4qvYyoM2npZeLCpe6aldOfdFL22-Uegyv4FVew8_FP2i1yWFmjtWMZU-iazVdu-xyC3gn9lot9ZHWRLMdjvYNdBZKiyXKPpFDGl2tdYzGgUjSG2nUPI5QhwKfrFTyOuqkk4aBy3wwcwQugN1WQ1wu1yhGxcwVEUzsRSolw">
+<div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-[10px] uppercase font-mono px-2.5 py-1 tracking-widest text-stone-800">
+              Pet Art
+            </div>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<span class="text-[10px] tracking-widest uppercase font-mono text-stone-400 block mb-1">29/11/2024 • Cotswolds</span>
+<h3 class="font-editorial text-2xl text-stone-900 font-normal leading-tight group-hover:text-stone-600 transition">
+                companion soul
+              </h3>
+<p class="mt-2 text-xs text-stone-500 font-light line-clamp-2">
+                Warm quietude and loyal eyes bathed in gentle morning Scandinavian window illumination.
+              </p>
+</div>
+<div class="mt-5 pt-4 border-t border-stone-100 flex items-center justify-between text-xs tracking-widest uppercase font-medium text-stone-900">
+<span class="">View series</span>
+<span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+</div>
+</div>
+</article>
+</div>
+<!-- Centered Bottom Pagination Dots (From screenshot) -->
+<div class="mt-16 flex items-center justify-center space-x-2">
+<span class="w-2 h-2 rounded-full bg-stone-300"></span>
+<span class="w-3.5 h-3.5 rounded-full border border-stone-900 flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-stone-900"></span>
+</span>
+<span class="w-2 h-2 rounded-full bg-stone-300"></span>
+</div>
+</section>
+<!-- END: PortfolioShowcase -->
+<!-- BEGIN: ServicesSection -->
+<section class="bg-bone py-20 border-t border-b border-stone-300" id="services">
+<div class="max-w-7xl mx-auto px-6 lg:px-16">
+<div class="max-w-2xl mb-14">
+<span class="text-[11px] uppercase tracking-extreme text-stone-500 block mb-2">Offerings &amp; Sessions</span>
+<h2 class="font-editorial text-4xl sm:text-6xl font-normal text-stone-900">
+            Tailored Experiences
+          </h2>
+<p class="mt-4 text-xs sm:text-sm text-stone-600 font-light leading-relaxed">
+            Every session is designed around unhurried observation, relaxed pacing, and customized light design.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Service 1 -->
+<div class="bg-[#FAFAF7] p-8 border border-stone-300/80 flex flex-col justify-between h-full">
+<div>
+<span class="font-mono text-xs text-stone-400 block mb-6">/ 01</span>
+<h3 class="font-editorial text-2xl text-stone-900 mb-3">Individual Portraiture</h3>
+<p class="text-xs text-stone-600 leading-relaxed font-light mb-6">
+                Psychological portraits and personal editorial books. Ideal for creatives, executives, or authentic self-documentation.
+              </p>
+</div>
+<ul class="text-[11px] uppercase tracking-wider text-stone-500 space-y-2 pt-4 border-t border-stone-200">
+<li class="">• 2.5 hours unhurried shoot</li>
+<li class="">• 25 hand-retouched finals</li>
+<li class="">• Moodboard consultation</li>
+</ul>
+</div>
+<!-- Service 2 -->
+<div class="bg-[#FAFAF7] p-8 border border-stone-300/80 flex flex-col justify-between h-full">
+<div>
+<span class="font-mono text-xs text-stone-400 block mb-6">/ 02</span>
+<h3 class="font-editorial text-2xl text-stone-900 mb-3">Brand &amp; Lookbook</h3>
+<p class="text-xs text-stone-600 leading-relaxed font-light mb-6">
+                Editorial campaigns for fashion maisons, jewelry ateliers, and architects craving high-end minimalist narratives.
+              </p>
+</div>
+<ul class="text-[11px] uppercase tracking-wider text-stone-500 space-y-2 pt-4 border-t border-stone-200">
+<li class="">• Full-day or half-day atelier</li>
+<li class="">• Digital &amp; medium format</li>
+<li class="">• Commercial license included</li>
+</ul>
+</div>
+<!-- Service 3 -->
+<div class="bg-[#FAFAF7] p-8 border border-stone-300/80 flex flex-col justify-between h-full">
+<div>
+<span class="font-mono text-xs text-stone-400 block mb-6">/ 03</span>
+<h3 class="font-editorial text-2xl text-stone-900 mb-3">Product Chiaroscuro</h3>
+<p class="text-xs text-stone-600 leading-relaxed font-light mb-6">
+                Tactile, sculpture-like still life photography highlighting luxury materials: leather, gemstones, ceramics, and horology.
+              </p>
+</div>
+<ul class="text-[11px] uppercase tracking-wider text-stone-500 space-y-2 pt-4 border-t border-stone-200">
+<li class="">• Studio light sculpting</li>
+<li class="">• Macro &amp; texture emphasis</li>
+<li class="">• Web &amp; print ready files</li>
+</ul>
+</div>
+<!-- Service 4 -->
+<div class="bg-[#FAFAF7] p-8 border border-stone-300/80 flex flex-col justify-between h-full">
+<div>
+<span class="font-mono text-xs text-stone-400 block mb-6">/ 04</span>
+<h3 class="font-editorial text-2xl text-stone-900 mb-3">Fine-Art Pet Souls</h3>
+<p class="text-xs text-stone-600 leading-relaxed font-light mb-6">
+                Honoring your animal companions in quiet, natural interiors with gallery-worthy portraits that capture their noble spirits.
+              </p>
+</div>
+<ul class="text-[11px] uppercase tracking-wider text-stone-500 space-y-2 pt-4 border-t border-stone-200">
+<li class="">• In-home or scenic location</li>
+<li class="">• Low-stress calm pace</li>
+<li class="">• Archival museum prints</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ServicesSection -->
+<!-- BEGIN: ContactBookingSection -->
+<section class="max-w-7xl mx-auto px-6 lg:px-16 py-20 lg:py-28" data-purpose="inquiry-form" id="contact">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Inquiry Info -->
+<div class="lg:col-span-5 space-y-6">
+<span class="text-[11px] uppercase tracking-extreme text-stone-500 block">Let's Connect</span>
+<h2 class="font-editorial text-5xl lg:text-6xl text-stone-900 font-light tracking-tight leading-tight">
+            Reserve Your Session
+          </h2>
+<p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed">
+            I work with a limited number of clients every month to ensure meticulous dedication to each story. Write to me about your vision, preferred timeframe, and shoot concept.
+          </p>
+<div class="pt-4 space-y-3 font-mono text-xs text-stone-800">
+<div class="">EMAIL: <a class="underline underline-offset-4 hover:text-stone-500" href="mailto:atelier@xlphoto.art">atelier@xlphoto.art</a></div>
+<div class="">STUDIO: Shoreditch High St, London E1</div>
+<div class="">PHONE: +44 (0) 20 7946 0912</div>
+</div>
+</div>
+<!-- Right Minimal Form -->
+<div class="lg:col-span-7 bg-white p-8 sm:p-12 border border-stone-300 shadow-sm">
+<form class="space-y-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-[10px] uppercase tracking-widest text-stone-500 mb-2">Your Name *</label>
+<input class="w-full bg-[#FAFAF7] border-stone-300 focus:border-stone-900 focus:ring-0 text-sm py-3 px-4 font-light placeholder:text-stone-400" placeholder="Elena Rostova" required="" type="text">
+</div>
+<div>
+<label class="block text-[10px] uppercase tracking-widest text-stone-500 mb-2">Email Address *</label>
+<input class="w-full bg-[#FAFAF7] border-stone-300 focus:border-stone-900 focus:ring-0 text-sm py-3 px-4 font-light placeholder:text-stone-400" placeholder="elena@domain.com" required="" type="email">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-[10px] uppercase tracking-widest text-stone-500 mb-2">Shooting Category</label>
+<select class="w-full bg-[#FAFAF7] border-stone-300 focus:border-stone-900 focus:ring-0 text-sm py-3 px-4 font-light text-stone-700">
+<option>Individual Portrait Session</option>
+<option>Brand / Lookbook Campaign</option>
+<option>Product &amp; Object Still Life</option>
+<option>Fine-Art Pet Portrait</option>
+</select>
+</div>
+<div>
+<label class="block text-[10px] uppercase tracking-widest text-stone-500 mb-2">Target Date / Location</label>
+<input class="w-full bg-[#FAFAF7] border-stone-300 focus:border-stone-900 focus:ring-0 text-sm py-3 px-4 font-light placeholder:text-stone-400" placeholder="e.g. October, London" type="text">
+</div>
+</div>
+<div>
+<label class="block text-[10px] uppercase tracking-widest text-stone-500 mb-2">Describe Your Essence or Project</label>
+<textarea class="w-full bg-[#FAFAF7] border-stone-300 focus:border-stone-900 focus:ring-0 text-sm py-3 px-4 font-light placeholder:text-stone-400" placeholder="Tell me about what you are seeking to capture, your mood, reference ideas..." rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-stone-900 hover:bg-black text-white text-xs uppercase tracking-widest font-medium transition duration-300 flex items-center justify-center gap-3" type="submit">
+<span class="">Send Inquiry</span>
+<span class="">→</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+</div>
+<!-- END: ContactBookingSection -->
+

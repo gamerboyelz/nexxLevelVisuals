@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/ellie/Documents/Dev Projects/NexxLevelVisuals/NexxLevelVisuals/NexxLevelVisuals.csproj": {}
+    "/home/ellie/Dev Projects/nexxlevelvisuals/nexxLevelVisuals/NexxLevelVisuals.csproj": {}
   },
   "projects": {
-    "/home/ellie/Documents/Dev Projects/NexxLevelVisuals/NexxLevelVisuals/NexxLevelVisuals.csproj": {
+    "/home/ellie/Dev Projects/nexxlevelvisuals/nexxLevelVisuals/NexxLevelVisuals.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ellie/Documents/Dev Projects/NexxLevelVisuals/NexxLevelVisuals/NexxLevelVisuals.csproj",
+        "projectUniqueName": "/home/ellie/Dev Projects/nexxlevelvisuals/nexxLevelVisuals/NexxLevelVisuals.csproj",
         "projectName": "NexxLevelVisuals",
-        "projectPath": "/home/ellie/Documents/Dev Projects/NexxLevelVisuals/NexxLevelVisuals/NexxLevelVisuals.csproj",
+        "projectPath": "/home/ellie/Dev Projects/nexxlevelvisuals/nexxLevelVisuals/NexxLevelVisuals.csproj",
         "packagesPath": "/home/ellie/.nuget/packages/",
-        "outputPath": "/home/ellie/Documents/Dev Projects/NexxLevelVisuals/NexxLevelVisuals/obj/",
+        "outputPath": "/home/ellie/Dev Projects/nexxlevelvisuals/nexxLevelVisuals/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ellie/.nuget/NuGet/NuGet.Config"
